@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test name="test">
+    <classes>
+      <class name="fengrao.Demo1"/>
+      <class name="fengrao.Demo3"/>
+    </classes>
+  </test> <!-- test -->
+  <test name="test(failed)">
+    <classes>
+      <class name="fengrao.Demo3">
+        <methods>
+          <include name="test5" invocation-numbers="2"/>
+          <include name="closeDriver"/>
+          <include name="loginOut"/>
+          <include name="login"/>
+          <include name="Inti"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- fengrao.Demo3 -->
+      <class name="fengrao.Demo1">
+        <methods>
+          <include name="FindBytitle1"/>
+          <include name="FindByContent"/>
+          <include name="test5"/>
+          <include name="closeDriver"/>
+          <include name="test9"/>
+          <include name="HandlePeople3"/>
+          <include name="doBeforeClass"/>
+          <include name="HandlePeople4"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- fengrao.Demo1 -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

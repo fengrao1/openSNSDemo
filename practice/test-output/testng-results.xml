@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="7" total="50" passed="43">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="1103652" started-at="2019-12-03T11:29:39Z" finished-at="2019-12-03T11:48:03Z">
+    <groups>
+    </groups>
+    <test name="test" duration-ms="1103652" started-at="2019-12-03T11:29:39Z" finished-at="2019-12-03T11:48:03Z">
+      <class name="fengrao.Demo1">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="doBeforeClass" is-config="true" duration-ms="19524" started-at="2019-12-03T19:29:39Z" finished-at="2019-12-03T19:29:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="login()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="login" is-config="true" duration-ms="38476" started-at="2019-12-03T19:29:59Z" finished-at="2019-12-03T19:30:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="FAIL" signature="FindByContent()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="FindByContent" duration-ms="11043" started-at="2019-12-03T19:30:38Z" description="根据摘要关键字查找" finished-at="2019-12-03T19:30:49Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at fengrao.Demo1.FindByContent(Demo1.java:270)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindByContent -->
+        <test-method status="PASS" signature="FindByContent1()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="FindByContent1" duration-ms="3397" started-at="2019-12-03T19:30:49Z" description="根据空内容查找" finished-at="2019-12-03T19:30:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindByContent1 -->
+        <test-method status="FAIL" signature="FindBytitle1()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="FindBytitle1" duration-ms="5671" started-at="2019-12-03T19:30:52Z" description="根据不存在的内容查找" finished-at="2019-12-03T19:30:58Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at fengrao.Demo1.FindBytitle1(Demo1.java:252)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindBytitle1 -->
+        <test-method status="PASS" signature="FindBytitle2()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="FindBytitle2" duration-ms="10469" started-at="2019-12-03T19:30:58Z" description="根据标题查找" finished-at="2019-12-03T19:31:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindBytitle2 -->
+        <test-method status="PASS" signature="FindPeopleByAddress1()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="FindPeopleByAddress1" duration-ms="32071" started-at="2019-12-03T19:31:08Z" description="按地区找人并关注，有用户存在的地区" finished-at="2019-12-03T19:31:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindPeopleByAddress1 -->
+        <test-method status="PASS" signature="FindPeopleByAddress2()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="FindPeopleByAddress2" duration-ms="28345" started-at="2019-12-03T19:31:40Z" description="按地区找人并关注，无用户存在的地区" finished-at="2019-12-03T19:32:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindPeopleByAddress2 -->
+        <test-method status="PASS" signature="FindPeopleByName1()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="FindPeopleByName1" duration-ms="11844" started-at="2019-12-03T19:32:09Z" description="查找存在的用户" finished-at="2019-12-03T19:32:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindPeopleByName1 -->
+        <test-method status="PASS" signature="FindPeopleByName2()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="FindPeopleByName2" duration-ms="7375" started-at="2019-12-03T19:32:20Z" description="查找空值" finished-at="2019-12-03T19:32:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindPeopleByName2 -->
+        <test-method status="PASS" signature="FindPeopleByName3()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="FindPeopleByName3" duration-ms="8222" started-at="2019-12-03T19:32:28Z" description="查找不存在的用户" finished-at="2019-12-03T19:32:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindPeopleByName3 -->
+        <test-method status="PASS" signature="FindPeopleByStatus1()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="FindPeopleByStatus1" duration-ms="10374" started-at="2019-12-03T19:32:36Z" description="查找开发者" finished-at="2019-12-03T19:32:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindPeopleByStatus1 -->
+        <test-method status="PASS" signature="FindPeopleByStatus2()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="FindPeopleByStatus2" duration-ms="5407" started-at="2019-12-03T19:32:46Z" description="查找站长" finished-at="2019-12-03T19:32:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindPeopleByStatus2 -->
+        <test-method status="PASS" signature="FindPeopleByStatus3()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="FindPeopleByStatus3" duration-ms="8408" started-at="2019-12-03T19:32:52Z" description="普通用户" finished-at="2019-12-03T19:33:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindPeopleByStatus3 -->
+        <test-method status="PASS" signature="HandlePeople1(java.lang.String)[pri:0, instance:fengrao.Demo1@28f67ac7]" name="HandlePeople1" duration-ms="18696" started-at="2019-12-03T19:33:04Z" description="进入用户个人主页取消关注" data-provider="TestData" finished-at="2019-12-03T19:33:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[feng1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandlePeople1 -->
+        <test-method status="PASS" signature="HandlePeople1(java.lang.String)[pri:0, instance:fengrao.Demo1@28f67ac7]" name="HandlePeople1" duration-ms="17964" started-at="2019-12-03T19:33:23Z" description="进入用户个人主页取消关注" data-provider="TestData" finished-at="2019-12-03T19:33:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[feng2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandlePeople1 -->
+        <test-method status="PASS" signature="HandlePeople1(java.lang.String)[pri:0, instance:fengrao.Demo1@28f67ac7]" name="HandlePeople1" duration-ms="16518" started-at="2019-12-03T19:33:41Z" description="进入用户个人主页取消关注" data-provider="TestData" finished-at="2019-12-03T19:33:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[feng3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandlePeople1 -->
+        <test-method status="PASS" signature="HandlePeople2(java.lang.String)[pri:0, instance:fengrao.Demo1@28f67ac7]" name="HandlePeople2" duration-ms="20009" started-at="2019-12-03T19:33:58Z" description="关注用户" data-provider="TestData" finished-at="2019-12-03T19:34:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[feng1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandlePeople2 -->
+        <test-method status="PASS" signature="HandlePeople2(java.lang.String)[pri:0, instance:fengrao.Demo1@28f67ac7]" name="HandlePeople2" duration-ms="19985" started-at="2019-12-03T19:34:18Z" description="关注用户" data-provider="TestData" finished-at="2019-12-03T19:34:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[feng2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandlePeople2 -->
+        <test-method status="PASS" signature="HandlePeople2(java.lang.String)[pri:0, instance:fengrao.Demo1@28f67ac7]" name="HandlePeople2" duration-ms="17754" started-at="2019-12-03T19:34:38Z" description="关注用户" data-provider="TestData" finished-at="2019-12-03T19:34:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[feng3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandlePeople2 -->
+        <test-method status="FAIL" signature="HandlePeople3()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="HandlePeople3" duration-ms="29761" started-at="2019-12-03T19:34:56Z" description="指定用户显示的粉丝人数变化" finished-at="2019-12-03T19:35:26Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at fengrao.Demo1.HandlePeople3(Demo1.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandlePeople3 -->
+        <test-method status="FAIL" signature="HandlePeople4()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="HandlePeople4" duration-ms="25417" started-at="2019-12-03T19:35:26Z" description="登录用户的关注人数变化" finished-at="2019-12-03T19:35:51Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at fengrao.Demo1.HandlePeople4(Demo1.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandlePeople4 -->
+        <test-method status="PASS" signature="HandlePeople5()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="HandlePeople5" duration-ms="20072" started-at="2019-12-03T19:35:51Z" description="对指定用户发起聊天" finished-at="2019-12-03T19:36:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandlePeople5 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="test1" duration-ms="12308" started-at="2019-12-03T19:36:11Z" description="国内新闻分类下的资讯列表显示" finished-at="2019-12-03T19:36:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test10()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="test10" duration-ms="10055" started-at="2019-12-03T19:36:23Z" description="我的投稿" finished-at="2019-12-03T19:36:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="test2" duration-ms="8841" started-at="2019-12-03T19:36:34Z" description="默认分类分类下的资讯列表显示" finished-at="2019-12-03T19:36:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="test4" duration-ms="9782" started-at="2019-12-03T19:36:42Z" description="轮播图片的变换,右侧按钮" finished-at="2019-12-03T19:36:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="FAIL" signature="test5()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="test5" duration-ms="6608" started-at="2019-12-03T19:36:52Z" description="轮播图片的变换,左侧按钮" finished-at="2019-12-03T19:36:59Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a id="btn_prev" href="javascript:;"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-UDJ5PR4', ip: '169.254.170.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 127112, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1e1f11f5-2c53-4eef-93a8-dbb08d256305]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a id="btn_prev" href="javascript:;"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-UDJ5PR4', ip: '169.254.170.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 127112, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1e1f11f5-2c53-4eef-93a8-dbb08d256305
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:140)
+	at fengrao.Demo1.test5(Demo1.java:320)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="test6(java.lang.String, java.lang.String)[pri:0, instance:fengrao.Demo1@28f67ac7]" name="test6" duration-ms="10713" started-at="2019-12-03T19:36:59Z" description="轮播图片的变换,右下侧按钮，测每一个按钮" data-provider="number" finished-at="2019-12-03T19:37:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[广告1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="test6(java.lang.String, java.lang.String)[pri:0, instance:fengrao.Demo1@28f67ac7]" name="test6" duration-ms="7745" started-at="2019-12-03T19:37:10Z" description="轮播图片的变换,右下侧按钮，测每一个按钮" data-provider="number" finished-at="2019-12-03T19:37:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[广告2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="test6(java.lang.String, java.lang.String)[pri:0, instance:fengrao.Demo1@28f67ac7]" name="test6" duration-ms="6978" started-at="2019-12-03T19:37:18Z" description="轮播图片的变换,右下侧按钮，测每一个按钮" data-provider="number" finished-at="2019-12-03T19:37:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[广告3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="test7()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="test7" duration-ms="23327" started-at="2019-12-03T19:37:25Z" description="投稿:不填写任何内容" finished-at="2019-12-03T19:37:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method status="PASS" signature="test8()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="test8" duration-ms="21394" started-at="2019-12-03T19:37:48Z" description="投稿:不填写任何内容，点击返回" finished-at="2019-12-03T19:38:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method status="FAIL" signature="test9()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="test9" duration-ms="25196" started-at="2019-12-03T19:38:10Z" description="投稿:填写内容后，点击返回" finished-at="2019-12-03T19:38:35Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at fengrao.Demo1.test9(Demo1.java:378)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:fengrao.Demo1@28f67ac7]" name="closeDriver" is-config="true" duration-ms="17866" started-at="2019-12-03T19:38:35Z" finished-at="2019-12-03T19:38:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- fengrao.Demo1 -->
+      <class name="fengrao.Demo3">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:fengrao.Demo3@256216b3]" name="doBeforeClass" is-config="true" duration-ms="18573" started-at="2019-12-03T19:38:53Z" finished-at="2019-12-03T19:39:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="login()[pri:0, instance:fengrao.Demo3@256216b3]" name="login" is-config="true" duration-ms="45408" started-at="2019-12-03T19:39:11Z" finished-at="2019-12-03T19:39:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="9007" started-at="2019-12-03T19:39:57Z" finished-at="2019-12-03T19:40:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:fengrao.Demo3@256216b3]" name="test1" duration-ms="7247" started-at="2019-12-03T19:40:06Z" description="通过点击资讯的标题进入详情页" finished-at="2019-12-03T19:40:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="7241" started-at="2019-12-03T19:40:13Z" finished-at="2019-12-03T19:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="7925" started-at="2019-12-03T19:40:20Z" finished-at="2019-12-03T19:40:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:fengrao.Demo3@256216b3]" name="test2" duration-ms="6342" started-at="2019-12-03T19:40:28Z" description="通过点击资讯的图片进入详情页" finished-at="2019-12-03T19:40:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="4293" started-at="2019-12-03T19:40:35Z" finished-at="2019-12-03T19:40:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="9419" started-at="2019-12-03T19:40:39Z" finished-at="2019-12-03T19:40:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test3(java.lang.String, java.lang.String)[pri:0, instance:fengrao.Demo3@256216b3]" name="test3" duration-ms="15389" started-at="2019-12-03T19:40:49Z" description="进入资讯详细界面输入不同的内容进行分享" data-provider="con" finished-at="2019-12-03T19:41:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[发表 Ctrl+Enter]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="6069" started-at="2019-12-03T19:41:04Z" finished-at="2019-12-03T19:41:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="8138" started-at="2019-12-03T19:41:10Z" finished-at="2019-12-03T19:41:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test3(java.lang.String, java.lang.String)[pri:0, instance:fengrao.Demo3@256216b3]" name="test3" duration-ms="15959" started-at="2019-12-03T19:41:18Z" description="进入资讯详细界面输入不同的内容进行分享" data-provider="con" finished-at="2019-12-03T19:41:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[分享成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="4310" started-at="2019-12-03T19:41:34Z" finished-at="2019-12-03T19:41:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="7706" started-at="2019-12-03T19:41:38Z" finished-at="2019-12-03T19:41:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test3(java.lang.String, java.lang.String)[pri:0, instance:fengrao.Demo3@256216b3]" name="test3" duration-ms="15534" started-at="2019-12-03T19:41:46Z" description="进入资讯详细界面输入不同的内容进行分享" data-provider="con" finished-at="2019-12-03T19:42:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[非常棒]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[分享成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="5970" started-at="2019-12-03T19:42:02Z" finished-at="2019-12-03T19:42:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="8568" started-at="2019-12-03T19:42:08Z" finished-at="2019-12-03T19:42:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test3(java.lang.String, java.lang.String)[pri:0, instance:fengrao.Demo3@256216b3]" name="test3" duration-ms="15369" started-at="2019-12-03T19:42:16Z" description="进入资讯详细界面输入不同的内容进行分享" data-provider="con" finished-at="2019-12-03T19:42:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[这个资讯里面有很多的内容，这个资讯里面有很多的内容，这个资讯里面有很多的内容，这个资讯里面有很多的内容]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[分享成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="4461" started-at="2019-12-03T19:42:32Z" finished-at="2019-12-03T19:42:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="7611" started-at="2019-12-03T19:42:36Z" finished-at="2019-12-03T19:42:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test3(java.lang.String, java.lang.String)[pri:0, instance:fengrao.Demo3@256216b3]" name="test3" duration-ms="15433" started-at="2019-12-03T19:42:44Z" description="进入资讯详细界面输入不同的内容进行分享" data-provider="con" finished-at="2019-12-03T19:42:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[##$]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[分享成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="5468" started-at="2019-12-03T19:42:59Z" finished-at="2019-12-03T19:43:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="9559" started-at="2019-12-03T19:43:05Z" finished-at="2019-12-03T19:43:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:fengrao.Demo3@256216b3]" name="test4" duration-ms="22474" started-at="2019-12-03T19:43:14Z" description="进入资讯详细界面输入表情进行分享" finished-at="2019-12-03T19:43:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="4380" started-at="2019-12-03T19:43:37Z" finished-at="2019-12-03T19:43:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="8944" started-at="2019-12-03T19:43:42Z" finished-at="2019-12-03T19:43:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test5(java.lang.String, java.lang.String)[pri:0, instance:fengrao.Demo3@256216b3]" name="test5" duration-ms="13690" started-at="2019-12-03T19:43:51Z" description="点击分享到后面的链接的网站" data-provider="con1" finished-at="2019-12-03T19:44:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[分享到QQ空间]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QQ空间]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="6201" started-at="2019-12-03T19:44:04Z" finished-at="2019-12-03T19:44:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="8374" started-at="2019-12-03T19:44:11Z" finished-at="2019-12-03T19:44:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test5(java.lang.String, java.lang.String)[pri:0, instance:fengrao.Demo3@256216b3]" name="test5" duration-ms="12123" started-at="2019-12-03T19:44:19Z" description="点击分享到后面的链接的网站" data-provider="con1" finished-at="2019-12-03T19:44:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[分享到新浪微博]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[登录]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="4031" started-at="2019-12-03T19:44:31Z" finished-at="2019-12-03T19:44:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="7608" started-at="2019-12-03T19:44:35Z" finished-at="2019-12-03T19:44:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="FAIL" signature="test5(java.lang.String, java.lang.String)[pri:0, instance:fengrao.Demo3@256216b3]" name="test5" duration-ms="11888" started-at="2019-12-03T19:44:43Z" description="点击分享到后面的链接的网站" data-provider="con1" finished-at="2019-12-03T19:44:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[分享到腾讯微博]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[腾讯网]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at fengrao.Demo3.test5(Demo3.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="4221" started-at="2019-12-03T19:44:55Z" finished-at="2019-12-03T19:44:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="8579" started-at="2019-12-03T19:44:59Z" finished-at="2019-12-03T19:45:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test5(java.lang.String, java.lang.String)[pri:0, instance:fengrao.Demo3@256216b3]" name="test5" duration-ms="11814" started-at="2019-12-03T19:45:08Z" description="点击分享到后面的链接的网站" data-provider="con1" finished-at="2019-12-03T19:45:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[分享到人人网]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[人人分享]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="4529" started-at="2019-12-03T19:45:19Z" finished-at="2019-12-03T19:45:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="7882" started-at="2019-12-03T19:45:24Z" finished-at="2019-12-03T19:45:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test5(java.lang.String, java.lang.String)[pri:0, instance:fengrao.Demo3@256216b3]" name="test5" duration-ms="11775" started-at="2019-12-03T19:45:32Z" description="点击分享到后面的链接的网站" data-provider="con1" finished-at="2019-12-03T19:45:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[分享到百度贴吧]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[贴吧]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="4197" started-at="2019-12-03T19:45:44Z" finished-at="2019-12-03T19:45:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="9193" started-at="2019-12-03T19:45:48Z" finished-at="2019-12-03T19:45:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test51()[pri:0, instance:fengrao.Demo3@256216b3]" name="test51" duration-ms="12068" started-at="2019-12-03T19:45:57Z" description="点击分享到微信" finished-at="2019-12-03T19:46:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test51 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="4373" started-at="2019-12-03T19:46:09Z" finished-at="2019-12-03T19:46:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="8550" started-at="2019-12-03T19:46:13Z" finished-at="2019-12-03T19:46:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test52()[pri:0, instance:fengrao.Demo3@256216b3]" name="test52" duration-ms="10875" started-at="2019-12-03T19:46:22Z" description="点击分享到到复制网址" finished-at="2019-12-03T19:46:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test52 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="5003" started-at="2019-12-03T19:46:33Z" finished-at="2019-12-03T19:46:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="7519" started-at="2019-12-03T19:46:38Z" finished-at="2019-12-03T19:46:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test7()[pri:0, instance:fengrao.Demo3@256216b3]" name="test7" duration-ms="10309" started-at="2019-12-03T19:46:45Z" description="评论空内容" finished-at="2019-12-03T19:46:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="4487" started-at="2019-12-03T19:46:56Z" finished-at="2019-12-03T19:47:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="7861" started-at="2019-12-03T19:47:00Z" finished-at="2019-12-03T19:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test8()[pri:0, instance:fengrao.Demo3@256216b3]" name="test8" duration-ms="13730" started-at="2019-12-03T19:47:08Z" description="回复评论" finished-at="2019-12-03T19:47:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="4214" started-at="2019-12-03T19:47:22Z" finished-at="2019-12-03T19:47:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="Inti()[pri:0, instance:fengrao.Demo3@256216b3]" name="Inti" is-config="true" duration-ms="7864" started-at="2019-12-03T19:47:26Z" finished-at="2019-12-03T19:47:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inti -->
+        <test-method status="PASS" signature="test9()[pri:0, instance:fengrao.Demo3@256216b3]" name="test9" duration-ms="9899" started-at="2019-12-03T19:47:34Z" description="删除评论" finished-at="2019-12-03T19:47:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+        <test-method status="PASS" signature="loginOut()[pri:0, instance:fengrao.Demo3@256216b3]" name="loginOut" is-config="true" duration-ms="5594" started-at="2019-12-03T19:47:44Z" finished-at="2019-12-03T19:47:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOut -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:fengrao.Demo3@256216b3]" name="closeDriver" is-config="true" duration-ms="13720" started-at="2019-12-03T19:47:49Z" finished-at="2019-12-03T19:48:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- fengrao.Demo3 -->
+    </test> <!-- test -->
+  </suite> <!-- Suite1 -->
+</testng-results>
